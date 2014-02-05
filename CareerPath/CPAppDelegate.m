@@ -7,12 +7,15 @@
 //
 
 #import "CPAppDelegate.h"
+#import "CPNextController.h"
+#import "CPNavController.h"
 
 @implementation CPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.nextController = [[CPNextController alloc] init];
+    self.nextController.movementDelegate = (CPNavController *)self.window.rootViewController;
     return YES;
 }
 							

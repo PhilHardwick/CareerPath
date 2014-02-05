@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>storyboardId</key>
+		<string>QuestionController</string>
+		<key>question</key>
+		<string>Are you happy in your Job?</string>
+		<key>Yes</key>
+		<string>Yeah</string>
+		<key>No</key>
+		<string>Not Really</string>
+	</dict>
+	<dict>
+		<key>storyboardId</key>
+		<string>QuestionController</string>
+		<key>question</key>
+		<string>I&apos;m sorry to hear that, is it because of your pay?</string>
+		<key>Yes</key>
+		<string>Yeah</string>
+		<key>No</key>
+		<string>Not Really</string>
+	</dict>
+	<dict>
+		<key>storyboardId</key>
+		<string>QuestionController</string>
+		<key>question</key>
+		<string>Have you considered negotiating a pay rise?</string>
+		<key>Yes</key>
+		<string>Yeah</string>
+		<key>No</key>
+		<string>Not Really</string>
+	</dict>
+	<dict>
+		<key>storyboardId</key>
+		<string>QuestionController</string>
+		<key>question</key>
+		<string>Maybe it would help to know the average pay for your job for your age?</string>
+		<key>Yes</key>
+		<string>Yeah it would</string>
+		<key>No</key>
+		<string>No, that wouldn&apos;t help</string>
+	</dict>
+    <dict>
+		<key>storyboardId</key>
+		<string>PayController</string>
+		<key>question</key>
+		<string></string>
+		<key>Yes</key>
+		<string></string>
+		<key>No</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>storyboardId</key>
+		<string>QuestionController</string>
+		<key>question</key>
+		<string>Have you thought about getting a similar job in a different workplace?</string>
+		<key>Yes</key>
+		<string>Yeah</string>
+		<key>No</key>
+		<string>Not Really</string>
+	</dict>
+	<dict>
+		<key>storyboardId</key>
+		<string>QuestionController</string>
+		<key>question</key>
+		<string>Do you think it would be difficult because there are a large number of other people looking for the same type of job?</string>
+		<key>Yes</key>
+		<string>Yeah</string>
+		<key>No</key>
+		<string>Not Really</string>
+	</dict>
+    <dict>
+		<key>storyboardId</key>
+		<string>UnemploymentController</string>
+		<key>question</key>
+		<string></string>
+		<key>Yes</key>
+		<string></string>
+		<key>No</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>6</integer>
+		<key>question</key>
+		<string>Do you think employers find it hard to fill the vacancies for your job? Therefore, giving you a better chance of getting a similar job elsewhere?</string>
+		<key>Yes</key>
+		<string>HTFController</string>
+		<key>No</key>
+		<string>HTFController</string>
+		<key>NextQuestion</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>7</integer>
+		<key>question</key>
+		<string>For those vacancies that are tough to fill, do you think they are because most people don&apos;t have the necessary skills and experience?</string>
+		<key>Yes</key>
+		<string>HTFController</string>
+		<key>No</key>
+		<string>HTFController</string>
+		<key>NextQuestion</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>8</integer>
+		<key>question</key>
+		<string>Do you think the number of job openings for your job will increase in the future?</string>
+		<key>Yes</key>
+		<string>PayController</string>
+		<key>No</key>
+		<string>QuestionController</string>
+		<key>NextQuestion</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>9</integer>
+		<key>question</key>
+		<string>Do you think there will be more job openings which require greater qualifications?</string>
+		<key>Yes</key>
+		<string>PayController</string>
+		<key>No</key>
+		<string>QuestionController</string>
+		<key>NextQuestion</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<integer>10</integer>
+		<key>question</key>
+		<string>Based on what you&apos;ve found out, what&apos;s your next step?</string>
+		<key>Yes</key>
+		<string>PayController</string>
+		<key>No</key>
+		<string>QuestionController</string>
+		<key>NextQuestion</key>
+		<string></string>
+	</dict>
+</array>
+</plist>

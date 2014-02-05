@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CPNextController.h"
 
 @interface CPAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) CPNextController *nextController;
 
 @end
