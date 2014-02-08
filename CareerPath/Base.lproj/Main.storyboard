@@ -165,14 +165,14 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you happy with your job?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="58f-gD-e45">
-                                <rect key="frame" x="57" y="143" width="206" height="96"/>
+                                <rect key="frame" x="57" y="29" width="206" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gf2-Oi-N5v">
-                                <rect key="frame" x="191" y="277" width="30" height="30"/>
+                                <rect key="frame" x="191" y="387" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Yes">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -182,7 +182,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="geL-AU-7LS">
-                                <rect key="frame" x="100" y="277" width="30" height="30"/>
+                                <rect key="frame" x="100" y="387" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="No">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -196,9 +196,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="vV2-n4-tRL"/>
                     <connections>
-                        <outlet property="noButton" destination="geL-AU-7LS" id="NIT-H5-rOF"/>
+                        <outlet property="noButton" destination="geL-AU-7LS" id="WIa-Jx-4Tf"/>
                         <outlet property="questionLabel" destination="58f-gD-e45" id="l9K-ou-0LD"/>
-                        <outlet property="yesButton" destination="gf2-Oi-N5v" id="MB6-j3-dk3"/>
+                        <outlet property="yesButton" destination="gf2-Oi-N5v" id="JXA-gr-6f7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VW6-7N-REM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -214,14 +214,14 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The unemployment rate for your chosen job is:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OxQ-Do-DLW">
-                                <rect key="frame" x="37" y="97" width="247" height="116"/>
+                                <rect key="frame" x="37" y="33" width="247" height="365"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dzs-PC-lic">
-                                <rect key="frame" x="144" y="324" width="32" height="30"/>
+                                <rect key="frame" x="144" y="406" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -240,6 +240,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Q7-hX-UYh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1781" y="1179"/>
+        </scene>
+        <!--Skills Shortage View Controller-->
+        <scene sceneID="FEQ-49-Awy">
+            <objects>
+                <viewController storyboardIdentifier="SkillsShortageController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zj0-Th-PCH" customClass="CPSkillsShortageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RzA-mP-DoJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pG4-fj-fQu">
+                                <rect key="frame" x="20" y="20" width="280" height="378"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aWF-zc-Pvh">
+                                <rect key="frame" x="144" y="406" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="Zj0-Th-PCH" eventType="touchUpInside" id="hc9-BG-dao"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="pG4-fj-fQu" id="VyW-Rp-3dE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oCq-kw-Q6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2208" y="1038"/>
+        </scene>
+        <!--Graph View Controller-->
+        <scene sceneID="hgO-to-Rpz">
+            <objects>
+                <viewController storyboardIdentifier="WorkingFuturesController" id="1j3-a3-XJT" customClass="CPGraphViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N0l-Dq-rXT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="XEM-Wo-nqa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="441"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Af9-CU-szz">
+                                <rect key="frame" x="144" y="450" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="1j3-a3-XJT" eventType="touchUpInside" id="gka-IJ-KoO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="XEM-Wo-nqa" id="Vxe-Ic-Xci"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U56-05-Icz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2576" y="1228"/>
         </scene>
         <!--Nav Controller-->
         <scene sceneID="PcV-wp-4Vb">

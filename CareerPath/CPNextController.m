@@ -22,7 +22,7 @@
 
 - (void)viewControllerAsksForNextController:(UIViewController *)viewController {
     CPReplaceSegueMovementDirection movementDir;
-    if (arc4random()%2 == 1) {
+    if (arc4random_uniform(2) == 1) {
         movementDir = CPReplaceSegueMovementDirectionUp;
     } else {
         movementDir = CPReplaceSegueMovementDirectionRight;
@@ -32,8 +32,8 @@
     if ([newController respondsToSelector:@selector(setQuestionLabel:)]) {
         [newController view];
         [((CPQuestionViewController *)newController).questionLabel setText:nextQuestion];
-        [((CPQuestionViewController *)newController).yesButton.titleLabel setText:nextPositiveResponse];
-        [((CPQuestionViewController *)newController).noButton.titleLabel setText:nextNegativeResponse];
+        ((CPQuestionViewController *)newController).yesButton.titleLabel.text = nextPositiveResponse;
+        ((CPQuestionViewController *)newController).noButton.titleLabel.text =  nextNegativeResponse;
     }
     CPReplaceSegue *segue = [[CPReplaceSegue alloc] initWithIdentifier:@"replace" source:viewController destination:newController movementDirection:movementDir];
     [segue perform];
@@ -47,6 +47,14 @@
     nextPositiveResponse = questions[questionId][@"Yes"];
     nextNegativeResponse = questions[questionId][@"No"];
     questionId++;
+}
+
+- (NSString *)getNextNegativeResponse {
+    return nextNegativeResponse;
+}
+
+- (NSString *)getNextPositiveResponse {
+    return nextPositiveResponse;
 }
 
 @end

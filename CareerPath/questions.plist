@@ -83,64 +83,74 @@
 		<string></string>
 	</dict>
 	<dict>
-		<key>id</key>
-		<integer>6</integer>
+		<key>storyboardId</key>
+		<string>QuestionController</string>
 		<key>question</key>
 		<string>Do you think employers find it hard to fill the vacancies for your job? Therefore, giving you a better chance of getting a similar job elsewhere?</string>
 		<key>Yes</key>
-		<string>HTFController</string>
+		<string>I reckon so</string>
 		<key>No</key>
-		<string>HTFController</string>
-		<key>NextQuestion</key>
-		<string></string>
+		<string>No way</string>
 	</dict>
 	<dict>
-		<key>id</key>
-		<integer>7</integer>
+		<key>storyboardId</key>
+		<string>QuestionController</string>
 		<key>question</key>
 		<string>For those vacancies that are tough to fill, do you think they are because most people don&apos;t have the necessary skills and experience?</string>
 		<key>Yes</key>
-		<string>HTFController</string>
+		<string>Possibly</string>
 		<key>No</key>
-		<string>HTFController</string>
-		<key>NextQuestion</key>
+		<string>Don&apos;t think so</string>
+	</dict>
+    <dict>
+		<key>storyboardId</key>
+		<string>SkillsShortageController</string>
+		<key>question</key>
+		<string></string>
+		<key>Yes</key>
+		<string></string>
+		<key>No</key>
 		<string></string>
 	</dict>
 	<dict>
-		<key>id</key>
-		<integer>8</integer>
+		<key>storyboardId</key>
+		<string>QuestionController</string>
 		<key>question</key>
 		<string>Do you think the number of job openings for your job will increase in the future?</string>
 		<key>Yes</key>
-		<string>PayController</string>
+		<string>Yes</string>
 		<key>No</key>
-		<string>QuestionController</string>
-		<key>NextQuestion</key>
-		<string></string>
+		<string>No</string>
 	</dict>
 	<dict>
-		<key>id</key>
-		<integer>9</integer>
+		<key>storyboardId</key>
+		<string>QuestionController</string>
 		<key>question</key>
 		<string>Do you think there will be more job openings which require greater qualifications?</string>
 		<key>Yes</key>
-		<string>PayController</string>
+		<string>That&apos;s very likely</string>
 		<key>No</key>
-		<string>QuestionController</string>
-		<key>NextQuestion</key>
+		<string>No</string>
+	</dict>
+    <dict>
+		<key>storyboardId</key>
+		<string>WorkingFuturesController</string>
+		<key>question</key>
+		<string></string>
+		<key>Yes</key>
+		<string></string>
+		<key>No</key>
 		<string></string>
 	</dict>
 	<dict>
-		<key>id</key>
-		<integer>10</integer>
+		<key>storyboardId</key>
+		<string>QuestionController</string>
 		<key>question</key>
 		<string>Based on what you&apos;ve found out, what&apos;s your next step?</string>
 		<key>Yes</key>
-		<string>PayController</string>
+		<string>Yes</string>
 		<key>No</key>
-		<string>QuestionController</string>
-		<key>NextQuestion</key>
-		<string></string>
+		<string>No</string>
 	</dict>
 </array>
 </plist>

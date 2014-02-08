@@ -12,5 +12,7 @@
 
 @required
 -(void)viewControllerAsksForNextController:(UIViewController *)viewController;
+-(NSString *)getNextPositiveResponse;
+-(NSString *)getNextNegativeResponse;
 
 @end

@@ -34,20 +34,26 @@
 	[self getAgeBand];
 }
 
--(void)getUnemploymentRate {
+-(void)getUnemploymentRateWithNumberOfFilters:(int)numOfFilters {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *filters = [NSString stringWithFormat:@"ageband:%@|region:%@|gender:%@", agebandId, [defaults objectForKey:KEY_REGION][@"code"], [defaults objectForKey:KEY_GENDER][@"code"]];
+    NSArray *filterComponents = @[@{@"filterName":@"ageband",@"filterData":agebandId},@{@"filterName":@"region",@"filterData":[defaults objectForKey:KEY_REGION][@"code"]},@{@"filterName":@"gender",@"filterData":[defaults objectForKey:KEY_GENDER][@"code"]}];
+    NSString *filters = [self getFilterStringFromArray:filterComponents usingNumberOfComponents:numOfFilters];
     [[CPAPIClient sharedInstance] GET:@"lfs/unemployment" parameters:@{@"soc":[defaults objectForKey:KEY_JOB][@"soc"],@"filterBy":filters} success:^(AFHTTPRequestOperation *operation, id response){
         NSDictionary *responseDict = (NSDictionary *)response;
+        if (responseDict[@"error"] != nil) {
+            [self getUnemploymentRateWithNumberOfFilters:(numOfFilters-1)];
+            return;
+        }
         NSArray *years = responseDict[@"years"];
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         NSString *text = [NSString stringWithFormat:@"The unemployment rate for %@", [defaults objectForKey:KEY_JOB][@"title"]];
         for (NSDictionary *year in years) {
-            text = [text stringByAppendingFormat:@"in %@ was %@%",year[@"year"], year[@"unemprate"]];
+            text = [text stringByAppendingFormat:@" in %@ was %@%%",year[@"year"], year[@"unemprate"]];
         }
-        text = [text stringByAppendingString:@"\n The national average of unemployment is 7%, so you can see for yourself whether this is high or low compared to the rest of the country and how likely you are to be able to move jobs without competition."];
+        text = [text stringByAppendingString:@"\n\nThe national average of unemployment is 7%, so you can see for yourself whether this is high or low compared to the rest of the country and how likely you are to be able to move jobs without competition."];
         [self.resultLabel setText:text];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error){
+        [self getUnemploymentRateWithNumberOfFilters:(numOfFilters-1)];
         NSLog(@"error: %@", error);
     }];
 }
@@ -68,19 +74,19 @@
             }
             //TODO deal with over 65s and under 16s
         }
-        [self getUnemploymentRate];
+        [self getUnemploymentRateWithNumberOfFilters:3];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error){
         NSLog(@"error: %@", error);
     }];
 }
 
-//- (void)getFilterNames {
-//    [[CPAPIClient sharedInstance] GET:@"lfs/filters" parameters:nil success:^(AFHTTPRequestOperation *operation, id response){
-//        filterNames = (NSArray *)response;
-//    } failure:^(AFHTTPRequestOperation *operation, NSError *error){
-//        NSLog(@"error: %@", error);
-//    }];
-//}
+- (NSString *)getFilterStringFromArray:(NSArray *)components usingNumberOfComponents:(int)num {
+    NSString *filterString = @"";
+    for (int x = 0; x < num; x++) {
+        filterString = [filterString stringByAppendingFormat:@"%@:%@|", components[x][@"filterName"], components[x][@"filterData"]];
+    }
+    return filterString;
+}
 
 - (void)didReceiveMemoryWarning
 {

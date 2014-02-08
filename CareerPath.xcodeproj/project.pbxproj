@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A04A6A418A6365100CE7C3F /* jquery-2.1.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 4A04A6A318A6365100CE7C3F /* jquery-2.1.0.min.js */; };
 		4A3E28EB1896D16F0037B8AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3E28EA1896D16F0037B8AE /* Foundation.framework */; };
 		4A3E28ED1896D16F0037B8AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3E28EC1896D16F0037B8AE /* CoreGraphics.framework */; };
 		4A3E28EF1896D16F0037B8AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3E28EE1896D16F0037B8AE /* UIKit.framework */; };
@@ -31,6 +32,11 @@
 		4A8C9354189C4D9A002104F0 /* questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A8C9353189C4D9A002104F0 /* questions.plist */; };
 		4A8C9358189E9FE6002104F0 /* CPNextController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C9357189E9FE6002104F0 /* CPNextController.m */; };
 		4A8C935B189EB5B4002104F0 /* CPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C935A189EB5B4002104F0 /* CPBaseViewController.m */; };
+		4AC6F26C18A2AAE200B7C758 /* CPSkillsShortageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6F26B18A2AAE200B7C758 /* CPSkillsShortageViewController.m */; };
+		4AC6F26F18A4C7DD00B7C758 /* CPGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6F26E18A4C7DD00B7C758 /* CPGraphViewController.m */; };
+		4AC6F27118A4CA8200B7C758 /* chart.html in Resources */ = {isa = PBXBuildFile; fileRef = 4AC6F27018A4CA8200B7C758 /* chart.html */; };
+		4AC6F27318A4CAC700B7C758 /* forest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4AC6F27218A4CAC700B7C758 /* forest.jpg */; };
+		4AC6F27518A5424D00B7C758 /* Chart.js in Resources */ = {isa = PBXBuildFile; fileRef = 4AC6F27418A5424D00B7C758 /* Chart.js */; };
 		4AED12F9189EEC950047DAA0 /* CPGatherInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AED12F8189EEC950047DAA0 /* CPGatherInfoViewController.m */; };
 		4AED12FC189EF1E80047DAA0 /* UIPickerDataAndDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AED12FB189EF1E80047DAA0 /* UIPickerDataAndDelegate.m */; };
 		4AED130018A01A2A0047DAA0 /* CPUnemploymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AED12FF18A01A2A0047DAA0 /* CPUnemploymentViewController.m */; };
@@ -49,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		0B0672DA97B74EBA97212D47 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A04A6A318A6365100CE7C3F /* jquery-2.1.0.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-2.1.0.min.js"; sourceTree = "<group>"; };
 		4A3E28E71896D16F0037B8AE /* CareerPath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareerPath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A3E28EA1896D16F0037B8AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4A3E28EC1896D16F0037B8AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,6 +93,13 @@
 		4A8C9357189E9FE6002104F0 /* CPNextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPNextController.m; sourceTree = "<group>"; };
 		4A8C9359189EB5B4002104F0 /* CPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPBaseViewController.h; sourceTree = "<group>"; };
 		4A8C935A189EB5B4002104F0 /* CPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPBaseViewController.m; sourceTree = "<group>"; };
+		4AC6F26A18A2AAE200B7C758 /* CPSkillsShortageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSkillsShortageViewController.h; sourceTree = "<group>"; };
+		4AC6F26B18A2AAE200B7C758 /* CPSkillsShortageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSkillsShortageViewController.m; sourceTree = "<group>"; };
+		4AC6F26D18A4C7DC00B7C758 /* CPGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPGraphViewController.h; sourceTree = "<group>"; };
+		4AC6F26E18A4C7DD00B7C758 /* CPGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPGraphViewController.m; sourceTree = "<group>"; };
+		4AC6F27018A4CA8200B7C758 /* chart.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = chart.html; sourceTree = "<group>"; };
+		4AC6F27218A4CAC700B7C758 /* forest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = forest.jpg; sourceTree = "<group>"; };
+		4AC6F27418A5424D00B7C758 /* Chart.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Chart.js; sourceTree = "<group>"; };
 		4AED12F7189EEC950047DAA0 /* CPGatherInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPGatherInfoViewController.h; sourceTree = "<group>"; };
 		4AED12F8189EEC950047DAA0 /* CPGatherInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPGatherInfoViewController.m; sourceTree = "<group>"; };
 		4AED12FA189EF1E80047DAA0 /* UIPickerDataAndDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPickerDataAndDelegate.h; sourceTree = "<group>"; };
@@ -183,6 +197,10 @@
 				4AED12F8189EEC950047DAA0 /* CPGatherInfoViewController.m */,
 				4AED12FE18A01A2A0047DAA0 /* CPUnemploymentViewController.h */,
 				4AED12FF18A01A2A0047DAA0 /* CPUnemploymentViewController.m */,
+				4AC6F26A18A2AAE200B7C758 /* CPSkillsShortageViewController.h */,
+				4AC6F26B18A2AAE200B7C758 /* CPSkillsShortageViewController.m */,
+				4AC6F26D18A4C7DC00B7C758 /* CPGraphViewController.h */,
+				4AC6F26E18A4C7DD00B7C758 /* CPGraphViewController.m */,
 			);
 			path = CareerPath;
 			sourceTree = "<group>";
@@ -191,10 +209,14 @@
 			isa = PBXGroup;
 			children = (
 				4A8C934E189B000A002104F0 /* sky.jpg */,
+				4AC6F27218A4CAC700B7C758 /* forest.jpg */,
 				4A3E292E189866970037B8AE /* October-Sky-copy2.jpg */,
 				4A3E292C1898668D0037B8AE /* October-Sky.jpg */,
 				4A3E28F21896D16F0037B8AE /* CareerPath-Info.plist */,
 				4A3E28F31896D16F0037B8AE /* InfoPlist.strings */,
+				4AC6F27418A5424D00B7C758 /* Chart.js */,
+				4A04A6A318A6365100CE7C3F /* jquery-2.1.0.min.js */,
+				4AC6F27018A4CA8200B7C758 /* chart.html */,
 				4A3E28F61896D16F0037B8AE /* main.m */,
 				4A3E28F81896D16F0037B8AE /* CareerPath-Prefix.pch */,
 				4A8C9353189C4D9A002104F0 /* questions.plist */,
@@ -300,13 +322,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AC6F27318A4CAC700B7C758 /* forest.jpg in Resources */,
 				4A3E292D1898668D0037B8AE /* October-Sky.jpg in Resources */,
 				4A3E292F189866970037B8AE /* October-Sky-copy2.jpg in Resources */,
+				4A04A6A418A6365100CE7C3F /* jquery-2.1.0.min.js in Resources */,
 				4A3E29031896D16F0037B8AE /* Images.xcassets in Resources */,
 				4A8C934F189B000A002104F0 /* sky.jpg in Resources */,
 				4A8C9354189C4D9A002104F0 /* questions.plist in Resources */,
 				4A3E28F51896D16F0037B8AE /* InfoPlist.strings in Resources */,
+				4AC6F27518A5424D00B7C758 /* Chart.js in Resources */,
 				4A3E28FE1896D16F0037B8AE /* Main.storyboard in Resources */,
+				4AC6F27118A4CA8200B7C758 /* chart.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,9 +386,11 @@
 			files = (
 				4A8C934D18997101002104F0 /* CPReplaceSegue.m in Sources */,
 				4A3E292B189864190037B8AE /* CPQuestionViewController.m in Sources */,
+				4AC6F26C18A2AAE200B7C758 /* CPSkillsShortageViewController.m in Sources */,
 				4AED12FC189EF1E80047DAA0 /* UIPickerDataAndDelegate.m in Sources */,
 				4AED12F9189EEC950047DAA0 /* CPGatherInfoViewController.m in Sources */,
 				4A3E293218986D300037B8AE /* CPNavController.m in Sources */,
+				4AC6F26F18A4C7DD00B7C758 /* CPGraphViewController.m in Sources */,
 				4A8C9352189B8850002104F0 /* CPAPIClient.m in Sources */,
 				4A8C935B189EB5B4002104F0 /* CPBaseViewController.m in Sources */,
 				4A8C9358189E9FE6002104F0 /* CPNextController.m in Sources */,

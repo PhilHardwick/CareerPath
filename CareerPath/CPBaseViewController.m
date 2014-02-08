@@ -8,6 +8,7 @@
 
 #import "CPBaseViewController.h"
 #import "CPAppDelegate.h"
+#import "CPQuestionViewController.h"
 
 @interface CPBaseViewController ()
 
@@ -34,6 +35,17 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)nextButtonTapped:(id)sender {
+    [self.nextControllerDelegate viewControllerAsksForNextController:self];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([self respondsToSelector:@selector(setYesButton:)] && [segue.identifier isEqualToString:@"replace"]) {
+        [((CPQuestionViewController *)self).yesButton.titleLabel setText:[self.nextControllerDelegate getNextPositiveResponse]];
+        [((CPQuestionViewController *)self).noButton.titleLabel setText:[self.nextControllerDelegate getNextNegativeResponse]];
+    }
 }
 
 @end

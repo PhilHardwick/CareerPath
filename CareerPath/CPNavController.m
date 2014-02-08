@@ -33,7 +33,7 @@
 {
     [super viewDidLoad];
     self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
-	UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sky.jpg"]];
+	UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"forest.jpg"]];
     CGSize size = tempImageView.frame.size;
     [self.scrollView setContentSize:tempImageView.frame.size];
     [tempImageView setContentMode:UIViewContentModeCenter];

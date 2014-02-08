@@ -11,6 +11,7 @@
 #import "CPReplaceSegueMovementDelegate.h"
 
 @interface CPNextController : NSObject <CPNextControllerDelegate> {
+    @public
     int questionId;
     NSString *nextStoryboardId;
     NSString *nextQuestion;

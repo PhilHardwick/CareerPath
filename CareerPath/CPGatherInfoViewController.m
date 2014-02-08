@@ -105,11 +105,19 @@
     return jobs.count>0?jobs.count:0;
 }
 
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view{
+    
+    UILabel *pickerLabel = (UILabel *)view;
+    CGRect frame = CGRectMake(0,0,320,40);
+    pickerLabel = [[UILabel alloc] initWithFrame:frame];
+    [pickerLabel setTextAlignment:NSTextAlignmentCenter];
+    [pickerLabel setBackgroundColor:[UIColor clearColor]];
+    [pickerLabel setFont:[UIFont boldSystemFontOfSize:12.0]];
+    [pickerLabel setNumberOfLines:0];
     if (jobs != nil) {
-        return jobs[row][@"title"];
+        [pickerLabel setText:jobs[row][@"title"]];
     }
-    return @"";
+    return pickerLabel;
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -139,6 +147,6 @@
     [defaults setObject:@{@"code":regions[regionSelected],@"description":regionSelected} forKey:KEY_REGION];
     int selected = [self.genderSegmentedControl selectedSegmentIndex];
      [defaults setObject:@{@"code":[NSString stringWithFormat:@"%d",(selected + 1)],@"description":[self.genderSegmentedControl titleForSegmentAtIndex:selected]} forKey:KEY_GENDER];
-    [self.nextControllerDelegate viewControllerAsksForNextController:self];
+    [super nextButtonTapped:sender];
 }
 @end

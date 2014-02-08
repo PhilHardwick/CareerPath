@@ -47,8 +47,4 @@
 - (IBAction)submitButtonTapped:(id)sender {
     
 }
-
-- (IBAction)nextButtonTapped:(id)sender {
-    [self.nextControllerDelegate viewControllerAsksForNextController:self];
-}
 @end
