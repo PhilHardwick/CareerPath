@@ -112,7 +112,8 @@
     pickerLabel = [[UILabel alloc] initWithFrame:frame];
     [pickerLabel setTextAlignment:NSTextAlignmentCenter];
     [pickerLabel setBackgroundColor:[UIColor clearColor]];
-    [pickerLabel setFont:[UIFont boldSystemFontOfSize:12.0]];
+    [pickerLabel setTextColor:[UIColor whiteColor]];
+    [pickerLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Bold" size:12.0f]];
     [pickerLabel setNumberOfLines:0];
     if (jobs != nil) {
         [pickerLabel setText:jobs[row][@"title"]];

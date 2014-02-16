@@ -20,6 +20,22 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor clearColor];
+    [self.questionLabel setText:self.question];
+    [self.yesButton setTitle:self.positiveResponse forState:UIControlStateNormal];
+    [self.noButton setTitle:self.negativeResponse forState:UIControlStateNormal];
+    switch (self.previousResponse) {
+        case CPPreviousQuestionResponseNegative:
+            [self.imageBackground setImage:[UIImage imageNamed:@"fromTop586"]];
+            break;
+        case CPPreviousQuestionResponsePositive:
+            [self.imageBackground setImage:[UIImage imageNamed:@"fromSide586"]];
+            break;
+        case CPPreviousQuestionResponseNone:
+            [self.imageBackground setImage:[UIImage imageNamed:@"noOrigin586"]];
+            break;
+        default:
+            break;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -30,11 +46,13 @@
 
 - (IBAction)noButtonTapped:(id)sender
 {
+    self.response = CPPreviousQuestionResponseNegative;
     [self answeredWithResponse:NO];
 }
 
 - (IBAction)yesButtonTapped:(id)sender
 {
+    self.response = CPPreviousQuestionResponsePositive;
     [self answeredWithResponse:YES];
 }
 

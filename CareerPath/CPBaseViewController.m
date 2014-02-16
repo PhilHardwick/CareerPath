@@ -29,6 +29,11 @@
 {
     [super viewDidLoad];
 	self.nextControllerDelegate = ((CPAppDelegate *)[UIApplication sharedApplication].delegate).nextController;
+    UIImage *backButtonImage = [UIImage imageNamed:@"backButton"];
+}
+
+- (void)goToStartViewController:(id)sender; {
+    [self.nextControllerDelegate viewControllerAsksForFirstController:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,14 +43,8 @@
 }
 
 - (IBAction)nextButtonTapped:(id)sender {
+    self.response = CPPreviousQuestionResponseNone;
     [self.nextControllerDelegate viewControllerAsksForNextController:self];
-}
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([self respondsToSelector:@selector(setYesButton:)] && [segue.identifier isEqualToString:@"replace"]) {
-        [((CPQuestionViewController *)self).yesButton.titleLabel setText:[self.nextControllerDelegate getNextPositiveResponse]];
-        [((CPQuestionViewController *)self).noButton.titleLabel setText:[self.nextControllerDelegate getNextNegativeResponse]];
-    }
 }
 
 @end

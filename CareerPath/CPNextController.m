@@ -9,6 +9,7 @@
 #import "CPNextController.h"
 #import "CPReplaceSegue.h"
 #import "CPQuestionViewController.h"
+#import <Accelerate/Accelerate.h>
 
 @implementation CPNextController
 
@@ -21,23 +22,30 @@
 }
 
 - (void)viewControllerAsksForNextController:(UIViewController *)viewController {
-    CPReplaceSegueMovementDirection movementDir;
-    if (arc4random_uniform(2) == 1) {
-        movementDir = CPReplaceSegueMovementDirectionUp;
-    } else {
-        movementDir = CPReplaceSegueMovementDirectionRight;
-    }
+    CPBaseViewController *baseViewController = (CPBaseViewController *)viewController;
     [self getDataForNextController];
     UIViewController *newController = [[UIStoryboard storyboardWithName:@"Main" bundle:Nil] instantiateViewControllerWithIdentifier:nextStoryboardId];
     if ([newController respondsToSelector:@selector(setQuestionLabel:)]) {
-        [newController view];
-        [((CPQuestionViewController *)newController).questionLabel setText:nextQuestion];
-        ((CPQuestionViewController *)newController).yesButton.titleLabel.text = nextPositiveResponse;
-        ((CPQuestionViewController *)newController).noButton.titleLabel.text =  nextNegativeResponse;
+        [((CPQuestionViewController *)newController) setQuestion:nextQuestion];
+        ((CPQuestionViewController *)newController).positiveResponse = nextPositiveResponse;
+        ((CPQuestionViewController *)newController).negativeResponse = nextNegativeResponse;
+        ((CPQuestionViewController *)newController).previousResponse = baseViewController.response;
+    }
+    CPReplaceSegueMovementDirection movementDir;
+    if (baseViewController.response == CPPreviousQuestionResponseNegative) {
+        movementDir = CPReplaceSegueMovementDirectionUp;
+    } else if (baseViewController.response == CPPreviousQuestionResponsePositive) {
+        movementDir = CPReplaceSegueMovementDirectionRight;
+    } else {
+        movementDir = arc4random_uniform(2)==1?CPReplaceSegueMovementDirectionRight:CPReplaceSegueMovementDirectionUp;
     }
     CPReplaceSegue *segue = [[CPReplaceSegue alloc] initWithIdentifier:@"replace" source:viewController destination:newController movementDirection:movementDir];
     [segue perform];
-    [self.movementDelegate segueOccuredWithDirection:movementDir];
+    if (shouldBlur == YES) {
+        [self.movementDelegate segueOccuredWithDirection:movementDir andBlur:YES];
+    } else {
+        [self.movementDelegate segueOccuredWithDirection:movementDir andBlur:NO];
+    }
 }
 
 - (void)getDataForNextController {
@@ -46,15 +54,18 @@
     nextStoryboardId = questions[questionId][@"storyboardId"];
     nextPositiveResponse = questions[questionId][@"Yes"];
     nextNegativeResponse = questions[questionId][@"No"];
+    shouldBlur = [questions[questionId][@"shouldBlur"] boolValue];
     questionId++;
 }
 
-- (NSString *)getNextNegativeResponse {
-    return nextNegativeResponse;
+- (void)viewControllerAsksForFirstController:(UIViewController *)viewController {
+    self->questionId = 0;
+    UIViewController *newController = [[UIStoryboard storyboardWithName:@"Main" bundle:Nil] instantiateViewControllerWithIdentifier:@"GatherInfoController"];
+    CPReplaceSegue *segue = [[CPReplaceSegue alloc] initWithIdentifier:@"replace" source:viewController destination:newController movementDirection:CPReplaceSegueMovementDirectionLeft];
+    [segue perform];
+    [self.movementDelegate segueOccuredBackToStart:CPReplaceSegueMovementDirectionLeft];
 }
 
-- (NSString *)getNextPositiveResponse {
-    return nextPositiveResponse;
-}
+
 
 @end

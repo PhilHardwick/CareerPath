@@ -17,6 +17,7 @@
     NSString *nextQuestion;
     NSString *nextPositiveResponse;
     NSString *nextNegativeResponse;
+    bool shouldBlur;
 }
 
 @property (nonatomic, weak) id<CPReplaceSegueMovementDelegate> movementDelegate;

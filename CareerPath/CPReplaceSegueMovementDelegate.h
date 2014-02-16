@@ -13,5 +13,8 @@
 
 @required
 -(void)segueOccuredWithDirection:(CPReplaceSegueMovementDirection)movementDirection;
+-(void)segueOccuredWithDirection:(CPReplaceSegueMovementDirection)movementDirection andBlur:(bool)shouldBlur;
+
+-(void)segueOccuredBackToStart:(CPReplaceSegueMovementDirection)movementDirection;
 
 @end

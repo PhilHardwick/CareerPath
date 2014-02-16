@@ -12,7 +12,8 @@ typedef NS_ENUM(NSInteger, CPReplaceSegueMovementDirection) {
     CPReplaceSegueMovementDirectionDown,
     CPReplaceSegueMovementDirectionUp,
     CPReplaceSegueMovementDirectionRight,
-    CPReplaceSegueMovementDirectionLeft
+    CPReplaceSegueMovementDirectionLeft,
+    CPReplaceSegueMovementDirectionOutwards
 };
 
 @interface CPReplaceSegue : UIStoryboardSegue

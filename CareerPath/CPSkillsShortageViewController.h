@@ -10,4 +10,6 @@
 
 @interface CPSkillsShortageViewController : CPBaseViewController
 
+@property (retain , nonatomic) NSDictionary *HTFAndSSVDict;
+
 @end
