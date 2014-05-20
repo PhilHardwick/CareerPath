@@ -11,5 +11,10 @@
 @interface CPGraphViewController : CPBaseViewController <UIWebViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
+@property (strong, nonatomic) IBOutlet UILabel *label;
+@property (strong, nonatomic) IBOutlet UIButton *allButton;
+    
+-(IBAction)filterTapped:(UIButton *)sender;
+-(IBAction)allFilterTapped:(UIButton *)sender;
 
 @end

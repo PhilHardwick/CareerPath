@@ -1,6 +1,6 @@
 <html>
     <script src="jquery-2.1.0.min.js"></script>
-    <script src="chart.js"></script>
+    <script src="Chart.js"></script>
     <style type="text/css">
         canvas {
             background: rgb(250, 247, 248);
@@ -37,6 +37,12 @@
                               respondCanvas();
                               
                               });
+                              function arrayObjectIndexOf(myArray, id) {
+                                  for(var i = 0, len = myArray.length; i < len; i++) {
+                                      if (myArray[i]["id"] === id) return i;
+                                  }
+                                  return -1;
+                              }
         </script>
     </div>
 </body>

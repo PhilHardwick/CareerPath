@@ -33,7 +33,7 @@
 		4AC6F26C18A2AAE200B7C758 /* CPSkillsShortageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6F26B18A2AAE200B7C758 /* CPSkillsShortageViewController.m */; };
 		4AC6F26F18A4C7DD00B7C758 /* CPGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6F26E18A4C7DD00B7C758 /* CPGraphViewController.m */; };
 		4AC6F27118A4CA8200B7C758 /* chart.html in Resources */ = {isa = PBXBuildFile; fileRef = 4AC6F27018A4CA8200B7C758 /* chart.html */; };
-		4AC6F27518A5424D00B7C758 /* chart.js in Resources */ = {isa = PBXBuildFile; fileRef = 4AC6F27418A5424D00B7C758 /* chart.js */; };
+		4AC6F27518A5424D00B7C758 /* Chart.js in Resources */ = {isa = PBXBuildFile; fileRef = 4AC6F27418A5424D00B7C758 /* Chart.js */; };
 		4AD2BA0E18AB5BF300A2BB9B /* fromSide.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2BA0B18AB5BF300A2BB9B /* fromSide.png */; };
 		4AD2BA0F18AB5BF300A2BB9B /* fromTop.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2BA0C18AB5BF300A2BB9B /* fromTop.png */; };
 		4AD2BA1018AB5BF300A2BB9B /* noOrigin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2BA0D18AB5BF300A2BB9B /* noOrigin.png */; };
@@ -104,7 +104,7 @@
 		4AC6F26D18A4C7DC00B7C758 /* CPGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPGraphViewController.h; sourceTree = "<group>"; };
 		4AC6F26E18A4C7DD00B7C758 /* CPGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPGraphViewController.m; sourceTree = "<group>"; };
 		4AC6F27018A4CA8200B7C758 /* chart.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = chart.html; sourceTree = "<group>"; };
-		4AC6F27418A5424D00B7C758 /* chart.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = chart.js; sourceTree = "<group>"; };
+		4AC6F27418A5424D00B7C758 /* Chart.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Chart.js; sourceTree = "<group>"; };
 		4AD2BA0B18AB5BF300A2BB9B /* fromSide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fromSide.png; sourceTree = "<group>"; };
 		4AD2BA0C18AB5BF300A2BB9B /* fromTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fromTop.png; sourceTree = "<group>"; };
 		4AD2BA0D18AB5BF300A2BB9B /* noOrigin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noOrigin.png; sourceTree = "<group>"; };
@@ -233,7 +233,7 @@
 				4AD2BA1718AD725000A2BB9B /* night.jpg */,
 				4A3E28F21896D16F0037B8AE /* CareerPath-Info.plist */,
 				4A3E28F31896D16F0037B8AE /* InfoPlist.strings */,
-				4AC6F27418A5424D00B7C758 /* chart.js */,
+				4AC6F27418A5424D00B7C758 /* Chart.js */,
 				4A04A6A318A6365100CE7C3F /* jquery-2.1.0.min.js */,
 				4AC6F27018A4CA8200B7C758 /* chart.html */,
 				4A3E28F61896D16F0037B8AE /* main.m */,
@@ -360,7 +360,7 @@
 				4A3E28F51896D16F0037B8AE /* InfoPlist.strings in Resources */,
 				4AD2BA1F18AE019000A2BB9B /* fromTop586.png in Resources */,
 				4A74BA5D18B1382C009E9D11 /* responseBkg.png in Resources */,
-				4AC6F27518A5424D00B7C758 /* chart.js in Resources */,
+				4AC6F27518A5424D00B7C758 /* Chart.js in Resources */,
 				4AD2BA0E18AB5BF300A2BB9B /* fromSide.png in Resources */,
 				4A3E28FE1896D16F0037B8AE /* Main.storyboard in Resources */,
 				4AD2BA2018AE019000A2BB9B /* noOrigin586.png in Resources */,
