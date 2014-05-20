@@ -113,8 +113,8 @@
 		4AD2BA1B18AE019000A2BB9B /* fromSide586.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fromSide586.png; sourceTree = "<group>"; };
 		4AD2BA1C18AE019000A2BB9B /* fromTop586.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fromTop586.png; sourceTree = "<group>"; };
 		4AD2BA1D18AE019000A2BB9B /* noOrigin586.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noOrigin586.png; sourceTree = "<group>"; };
-		4AD2BA2118AE031000A2BB9B /* CPSkillsShortagePart2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPSkillsShortagePart2ViewController.h; path = ../CPSkillsShortagePart2ViewController.h; sourceTree = "<group>"; };
-		4AD2BA2218AE031000A2BB9B /* CPSkillsShortagePart2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPSkillsShortagePart2ViewController.m; path = ../CPSkillsShortagePart2ViewController.m; sourceTree = "<group>"; };
+		4AD2BA2118AE031000A2BB9B /* CPSkillsShortagePart2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSkillsShortagePart2ViewController.h; sourceTree = "<group>"; };
+		4AD2BA2218AE031000A2BB9B /* CPSkillsShortagePart2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSkillsShortagePart2ViewController.m; sourceTree = "<group>"; };
 		4AD2BA2418AF70CE00A2BB9B /* decision.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = decision.png; sourceTree = "<group>"; };
 		4AD2BA2618AF789800A2BB9B /* CPEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPEndViewController.h; sourceTree = "<group>"; };
 		4AD2BA2718AF789800A2BB9B /* CPEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPEndViewController.m; sourceTree = "<group>"; };
